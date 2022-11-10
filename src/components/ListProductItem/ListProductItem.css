@@ -1,0 +1,44 @@
+.catalog_list-product-item {
+    display: flex;
+    flex-basis: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.catalog_list-product-item .catalog_list-product-item-into {
+    width: 100%;
+}
+
+.catalog_list-product-item .catalog_list-product-item-into  .catalog_list-product-item-into-img {
+    overflow: hidden;
+    height: 300px;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.catalog_list-product-item .catalog_list-product-item-into  .catalog_list-product-item-into-img img {
+    height: 100%;
+    object-fit:cover;
+
+}
+
+.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-headind {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-price {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}

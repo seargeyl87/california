@@ -1,0 +1,22 @@
+.catalog {
+    display: flex;
+    margin: 50px 0 50px 0;
+}
+
+
+.catalog .catalog_list-filters {
+    display: flex;
+    flex-basis: 15%;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.catalog .catalog_list-product {
+    display: flex;
+    flex-basis: 85%;
+    flex-wrap: wrap;
+}
+
+
+

@@ -1,0 +1,88 @@
+.enter-email {
+    display: flex;
+    padding: 0 20% 0 10%;
+    box-sizing: border-box;
+}
+
+.enter-email .enter-email_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #DCE5E2;
+    border-radius: 16px;
+    width: 100%;
+
+
+}
+
+.enter-email .enter-email_background .enter-email_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.enter-email .enter-email_background .enter-email_info .enter-email_heading {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    }
+
+.enter-email .enter-email_info .enter-email_description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.enter-email .enter-email_background .enter-email_img {
+    display: flex;
+    width: 25%;
+    margin-top: 20px;
+}
+
+.enter-email .enter-email_background .enter-email_img img {
+    width: 100%;
+}
+
+.enter-email .enter-email_background .enter-email_sign-up {
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.enter-email .enter-email_background .enter-email_sign-up input {
+    width: 285px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 54px 0px 0px 54px;
+    padding-left: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.enter-email .enter-email_background .enter-email_sign-up button {
+    width: 115px;
+    height: 50px;
+    border-radius: 0px 54px 54px 0px;
+    background: #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+ }
+
+.enter-email .enter-email_background .enter-email_sign-up {
+    display: flex;
+}

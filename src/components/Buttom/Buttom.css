@@ -1,0 +1,66 @@
+.buttom {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: #F8F9FA;
+}
+
+
+.buttom .buttom-line {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background: #DCE5E2;
+}
+
+.buttom .buttom-menu {
+    display: flex;
+}
+
+
+.buttom .buttom-menu .buttom_logo-description {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+}
+
+.buttom .buttom-menu .buttom_logo-description .buttom_logo-description_description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.buttom .buttom-menu .buttom_sections {
+    display: flex;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.buttom .buttom-menu .buttom_sections .buttom_sections_list {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.buttom .buttom-menu .buttom_sections .buttom_sections_list .buttom_sections_list_head {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 10px;
+    height: 28px;
+}
+
+.buttom .buttom-menu .buttom_sections .buttom_sections_list .buttom_sections_list_item-menu {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    }

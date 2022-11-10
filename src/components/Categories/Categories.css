@@ -1,0 +1,238 @@
+.categories {
+    display: flex;
+    max-width: 1440px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px 0px 40px 0px;
+    align-items: center;
+}
+
+.categories .categories_head {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+}
+
+.categories .categories_description {
+    display: flex;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    width: 40%;
+    align-items: center;
+}
+
+.categories .categories_section {
+    display: flex;
+    margin-top: 40px;
+    
+}
+
+.categories .categories_section .categories_laptop-watch {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 7px;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_laptop {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 5%;
+    box-sizing: border-box;  
+    margin-bottom: 7px;
+    box-shadow: 0px 0px 18px 6px #c7c7c7;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_laptop img {
+    width: 80%;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_laptop .categories_laptop_name-description {
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+
+.categories .categories_section .categories_laptop-watch .categories_laptop .categories_laptop_name-description .categories_laptop_name-description-into {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-end;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_laptop .categories_laptop_name-description .categories_laptop_name-description-into .categories_laptop_name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;    
+    color: #000000;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_laptop .categories_laptop_name-description .categories_laptop_name-description-into .categories_laptop_description {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    text-align: end;
+    
+}
+
+.categories .categories_section .categories_laptop-watch .categories_watch {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;  
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 7px;
+    box-shadow: 0px 0px 18px 6px #c7c7c7;
+
+
+}
+
+.categories .categories_section .categories_laptop-watch .categories_watch img {
+    width: 60%;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_watch .categories_watch_name-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_watch .categories_watch_name-description .categories_watch_name-description-into {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_watch .categories_watch_name-description .categories_watch_name-description-into .categories_watch_name {
+    display: flex;
+    justify-content: end;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;    
+    color: #000000;
+}
+
+.categories .categories_section .categories_laptop-watch .categories_watch .categories_watch_name-description .categories_watch_name-description-into .categories_watch_description {
+    display: flex;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    text-align: end;
+}
+
+.categories .categories_section .categories_phone {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 7px;
+    box-shadow: 0px 0px 18px 6px #c7c7c7;
+
+    
+}
+
+.categories .categories_section .categories_phone img { 
+    width: 100%;
+}
+
+.categories .categories_section .categories_phone .categories_phone_name-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.categories .categories_section .categories_phone .categories_phone_name-description .categories_phone_name {
+    display: flex;
+    justify-content: end;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;    
+    color: #000000;
+}
+
+.categories .categories_section .categories_phone .categories_phone_name-description .categories_phone_description {
+    display: flex;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    text-align: center;
+    width: 70%;
+}
+
+.categories .categories_section .categories_tablet {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 7px;
+    box-shadow: 0px 0px 18px 6px #c7c7c7;
+
+}
+
+.categories .categories_section .categories_tablet img {
+    width: 100%;
+}
+
+.categories .categories_section .categories_tablet .categories_tablet_name-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories .categories_section .categories_tablet .categories_tablet_name-description .categories_tablet_name {
+    display: flex;
+    justify-content: end;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;    
+    color: #000000;
+}
+
+.categories .categories_section .categories_tablet .categories_tablet_name-description .categories_tablet_description {
+    display: flex;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    text-align: center;
+    width: 70%;
+}
+
+.categories .categories_section .categories_tablet .categories_tablet_img {
+    margin-top: 30px;
+}
+
+
+
