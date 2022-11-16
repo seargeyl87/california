@@ -1,5 +1,10 @@
 
 
 .checkbox-item {
+  display: flex; 
+}
+
+.checkbox-item  .checkbox-item_checkbox_name {
   display: flex;
+  width: 50px;
 }

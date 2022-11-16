@@ -12,10 +12,24 @@
     margin-left: 30px;
 }
 
-.catalog .catalog_list-product {
+.catalog .catalog_list-product .catalog_list-product_into {
     display: flex;
     flex-basis: 85%;
     flex-wrap: wrap;
+}
+
+.catalog .catalog_list-product .catalog-show-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.catalog .catalog_list-product .catalog-show-more button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(163, 65, 0);
+    color: white;
+    
 }
 
 

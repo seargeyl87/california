@@ -9,15 +9,18 @@ function CheckBoxItem({itemCheck, changeChooseOzu}) {
     function checkChange() {
         setCheck((check) => !check);
     }
-
+ 
     useEffect(() => {
          changeChooseOzu(itemCheck, check)
-         }, [check])
+         }, [check]);
+
+
+         
 
     return (
       <div className="checkbox-item"> 
             <input type="checkbox" checked={check} onChange={checkChange}/>
-            <div className="checkbox_name">{itemCheck} GB</div>         
+            <div className="checkbox-item_checkbox_name">{itemCheck} GB</div>         
      </div>
     )
 }

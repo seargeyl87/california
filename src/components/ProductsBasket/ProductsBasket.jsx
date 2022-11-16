@@ -1,39 +1,52 @@
-import './ProductsBasket.css';
-import {useState} from 'react';
+import "./ProductsBasket.css";
+import { useState } from "react";
+import BasketCount from "../BasketCount/BasketCount";
+import PostService from '../../API/PostService';
 
-function ProductsBasket() {
-    let [countProduct, setCountProduct] = useState(2);
 
-    function reduceProduct() {
-        if(countProduct > 1) {
-            setCountProduct(--countProduct)
-        }
+function ProductsBasket(limit, page, ozy, id) {
+  let [countProduct, setCountProduct] = useState(0);
+//   let [products, setProducts] = useState([]);
+
+//   function  getProducts() {
+//     let response = PostService.getIphones(limit, page, ozy, 5).then((resp) => {
+//       setProducts(resp.data)
+//     })
+//   }
+// useState(() => {
+//   getProducts();
+// },[])
+
+// console.log(products)
+
+
+  function reduceProduct() {
+    if (countProduct > 1) {
+      setCountProduct(--countProduct);
     }
-    function addProduct() {
-        setCountProduct(++countProduct)
-    }
+  }
+  function addProduct() {
+    setCountProduct(++countProduct);
+  }
 
-    return (
-        <div className="products-basket">
-            <div className="products-basket_delete">x</div>
-            <div className="products-basket_img">
-                <img src="img/categories_phone.png"/>
-            </div>
-            <div className="products-basket_name-count">
-                <div className="products-basket_name">Apple iPhone 14 128GB</div>
-                <div className="products-basket_count">
-                    <button onClick={reduceProduct}>-</button>
-                    <input value={countProduct}/>
-                    <button onClick={addProduct}>+</button>
-                </div>
-            </div>
+  console.log(localStorage)
 
-
-        </div>
-    )
-
-
+  return (
+    <div className="products-basket">
+      <div className="products-basket_delete">x</div>
+      <div className="products-basket_img">
+        <img src="img/categories_phone.png" />
+      </div>
+      <div className="products-basket_name-count">
+        <div className="products-basket_name">Apple iPhone 14 128GB</div>
+        <BasketCount
+          reduceProduct={reduceProduct}
+          countProduct={countProduct}
+          addProduct={addProduct}
+        />
+      </div>
+    </div>
+  );
 }
-
 
 export default ProductsBasket;

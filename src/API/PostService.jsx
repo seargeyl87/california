@@ -6,14 +6,13 @@ export default class PostService {
     return response;
   };
 
-  static async getIphones(limit, page, ozy, flesh) {
+  static async getIphones(limit, page, ozy, id) {
     const response = await axios.get(`http://localhost:3000/iphones`, {
       params: {
         _limit: limit,
         _page: page,
         ozy: ozy,
-        flesh: flesh
-
+        id: id
       },
     });
     return response;

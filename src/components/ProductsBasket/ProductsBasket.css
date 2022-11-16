@@ -34,23 +34,3 @@
     font-size: 15px;
     color: #000000;
 }
-
-.products-basket .products-basket_name-count .products-basket_count {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.products-basket .products-basket_name-count .products-basket_count button {
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(83, 83, 83);
-    color: aliceblue;
-}
-
-.products-basket .products-basket_name-count .products-basket_count input {
-text-align: center;
-width: 30px;
-margin: 0 10px 0 10px;
-}
