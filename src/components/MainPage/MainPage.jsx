@@ -4,7 +4,7 @@ import MostSelledItems from '../MostSelledItems/MostSelledItems';
 import BestAround from '../BestAround/BestAround';
 import Ideas from '../Ideas/Ideas';
 import LookingFor from '../LookingFor/LookingFor';
-import EnterEmail from '../EnterEmail/EnterEmail';
+import EnterPhone from '../EnterPhone/EnterPhone';
  
 
 
@@ -18,7 +18,7 @@ function  MainPage() {
         <BestAround/>
         <Ideas/>
         <LookingFor/>
-        <EnterEmail/>
+        <EnterPhone/>
         </>
     )
     

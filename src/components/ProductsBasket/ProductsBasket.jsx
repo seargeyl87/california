@@ -1,7 +1,6 @@
 import "./ProductsBasket.css";
 import { useState } from "react";
 import BasketCount from "../BasketCount/BasketCount";
-import PostService from '../../API/PostService';
 
 
 function ProductsBasket(limit, page, ozy, id) {

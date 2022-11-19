@@ -9,7 +9,7 @@ function CatalogFilter({ changeChooseOzu }) {
   function getFilterOzy() {
     let response = PostService.getFilters().then((resp) => {
       setStateFilterOzy(resp.data);
-    });
+    }); 
   }
 
   useEffect(() => {

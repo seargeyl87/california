@@ -1,10 +1,10 @@
-.enter-email {
+.enter-phone {
     display: flex;
     padding: 0 20% 0 10%;
     box-sizing: border-box;
 }
 
-.enter-email .enter-email_background {
+.enter-phone .enter-phone_background {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
 
 }
 
-.enter-email .enter-email_background .enter-email_info {
+.enter-phone .enter-phone_background .enter-phone_info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
     
 }
 
-.enter-email .enter-email_background .enter-email_info .enter-email_heading {
+.enter-phone .enter-phone_background .enter-phone_info .enter-phone_heading {
     font-family: 'Readex Pro';
     font-style: normal;
     font-weight: 400;
@@ -31,7 +31,7 @@
     line-height: 52px;
     }
 
-.enter-email .enter-email_info .enter-email_description {
+.enter-phone .enter-phone_info .enter-phone_description {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -40,26 +40,26 @@
 }
 
 
-.enter-email .enter-email_background .enter-email_img {
+.enter-phone .enter-phone_background .enter-phone_img {
     display: flex;
     width: 25%;
     margin-top: 20px;
 }
 
-.enter-email .enter-email_background .enter-email_img img {
+.enter-phone .enter-phone_background .enter-phone_img img {
     width: 100%;
 }
 
-.enter-email .enter-email_background .enter-email_sign-up {
+.enter-phone .enter-phone_background .enter-phone_sign-up {
     display: flex;
     margin: 20px 0 20px 0;
 }
 
-.enter-email .enter-email_background .enter-email_sign-up input {
+.enter-phone .enter-phone_background .enter-phone_sign-up input {
     width: 285px;
     height: 50px;
     border: 1px solid #000000;
-    border-radius: 54px 0px 0px 54px;
+    border-radius: 54px;
     padding-left: 30px;
     font-family: 'Inter';
     font-style: normal;
@@ -69,20 +69,30 @@
     color: #000000;
 }
 
-.enter-email .enter-email_background .enter-email_sign-up button {
+.enter-phone .enter-phone_background .enter-phone_sign-up button {
     width: 115px;
     height: 50px;
-    border-radius: 0px 54px 54px 0px;
+    border-radius: 54px;
     background: #000000;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
     text-align: center;
     color: #FFFFFF;
  }
 
-.enter-email .enter-email_background .enter-email_sign-up {
+.enter-phone .enter-phone_background .enter-phone_sign-up {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enter-phone .enter-phone_background .enter-phone_sign-up input { 
+    margin-bottom: 20px;
+}
+
+.enter-phone .enter-phone_background .enter-phone_sign-up .enter-phone_sign-up_sign-correct {
+   height: 25px;
+   color:tomato;
 }

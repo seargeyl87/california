@@ -7,8 +7,8 @@ import { useState, useEffect } from "react";
 function Catalog() {
   let [state, setState] = useState([]);
   let [chooseFilterOzy, setChooseFilterOzy] = useState([]);
-  let [queryPage, setQueryPage] = useState(0);                 // количество полученных запросов для получения данных
-  let [itemOnQuery, setItemOnQuery] = useState(3);             // количество товаров при одном запросе
+  let [queryPage, setQueryPage] = useState(0);                 // количество полученных запросов для получения данных 
+  let [itemOnQuery, setItemOnQuery] = useState(6);             // количество товаров при одном запросе
   let [amountQuery, setAmountQuery] = useState(0);             // количество запросов для получения данных (по сути страниц) (всего)
 
 
@@ -16,53 +16,42 @@ function Catalog() {
     let response = PostService.getIphones(itemOnQuery, queryPage, chooseFilterOzy).then(
       (resp) => {
         setAmountQuery(Math.ceil(resp.headers["x-total-count"]/itemOnQuery))
-        //console.log(resp.headers["x-total-count"]);
         setState([...state, ...resp.data]);
-        setQueryPage(queryPage + 1);
+        setQueryPage(++queryPage);
       }
     );
   }
-
-  
-
-  console.log(amountQuery); // в общем нужно сравнить эти 2 параметра и в зависимости от данного сравнения показываить или не показывать кнопку  Show more
   console.log(queryPage)
+  console.log(chooseFilterOzy)
+
 
   function changeChooseOzu(param, bool) {
-    console.log(param);
-    if (bool) {
+    if (!bool) {
       setChooseFilterOzy([...chooseFilterOzy, param]);
+    } else {
+      setChooseFilterOzy(chooseFilterOzy.filter(item => item !==param));  
     }
   }
-  console.log(localStorage);
+
+  function  filterOzu() {
+    let response = PostService.getIphones(itemOnQuery, queryPage, chooseFilterOzy).then(
+      (resp) => {
+        setAmountQuery(Math.ceil(resp.headers["x-total-count"]/itemOnQuery))
+        setState(resp.data);
+        
+      }
+    )
+  }
 
   useEffect(() => {
     getProducts();
   }, []);
 
-  //console.log(arr.findIndex((item) => item===3))
+  useEffect(() => {
+    filterOzu();
+  }, [chooseFilterOzy]);
 
-  //chooseFilterOzy.splice(chooseFilterOzy.findIndex((item) => item===param)
 
-  // let a = 5;
-
-  // function  switchC() {
-  //     switch (typeof a) {
-  //         case 'number':
-  //             console.log('это верный ответ, а равно 5')
-  //             break;
-  //             case "string":
-  //             console.log('это верный ответ, а равно 4')
-  //             break;
-  //         default:
-  //             console.log('нету верных ответов')
-  //     }
-
-  // }
-
-  //     useEffect(() => {
-  //         switchC()
-  //     },[])
 
   return (
     <div className="catalog">
@@ -75,11 +64,9 @@ function Catalog() {
             <ListProductItem itemProduct={item} key={index} />
           ))}
         </div>
-
         <div className="catalog-show-more">
-        {amountQuery > queryPage ? <button onClick={getProducts}>Show more</button> : <div></div>}
+        {amountQuery >= queryPage ? <button onClick={getProducts}>Show more</button> : <div></div>}
         </div>
-
       </div>
     </div>
   );

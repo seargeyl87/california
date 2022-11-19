@@ -3,19 +3,18 @@ import {useState, useEffect} from 'react';
 
 
 function CheckBoxItem({itemCheck, changeChooseOzu}) {
-
     let [check, setCheck] = useState(false);
+    
     
     function checkChange() {
         setCheck((check) => !check);
+        changeChooseOzu(itemCheck, check);
     }
+    console.log(itemCheck)
  
-    useEffect(() => {
-         changeChooseOzu(itemCheck, check)
-         }, [check]);
-
-
-         
+    // useEffect(() => {
+    //      changeChooseOzu(itemCheck, check)
+    //      }, [check]);
 
     return (
       <div className="checkbox-item"> 
