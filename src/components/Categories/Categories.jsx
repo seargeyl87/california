@@ -14,33 +14,36 @@ function Categories() {
       </div>
       <div className="categories_section">
         <div className="categories_laptop-watch">
-          {/* <Link to="/products"> */}
-          <div className="categories_laptop">
-            <img src="img/categories_laptop.png" />
-            <div className="categories_laptop_name-description">
-              <div className="categories_laptop_name-description-into">
-                <div className="categories_laptop_name">Laptops</div>
-                <div className="categories_laptop_description">
-                  True Laptop Solution
+          <Link to="/products/2">
+            <div className="categories_laptop">
+              <img src="img/categories_laptop.png" />
+              <div className="categories_laptop_name-description">
+                <div className="categories_laptop_name-description-into">
+                  <div className="categories_laptop_name">Laptops</div>
+                  <div className="categories_laptop_description">
+                    True Laptop Solution
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          {/* </Link> */}
-          <div className="categories_watch">
-            <img src="img/categories_watch.png" />
-            <div className="categories_watch_name-description">
-              <div className="categories_watch_name-description-into">
-                <div className="categories_watch_name">Watch</div>
-                <div className="categories_watch_description">
-                  Not just stylisht
+          </Link>
+          <Link to="/products/3">
+            <div className="categories_watch">
+              <img src="img/categories_watch.png" />
+              <div className="categories_watch_name-description">
+                <div className="categories_watch_name-description-into">
+                  <div className="categories_watch_name">Watch</div>
+                  <div className="categories_watch_description">
+                    Not just stylisht
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
+
         <div className="categories_phone">
-          <Link to="/products">
+          <Link to="/products/1">
             <div className="categories_phone_img">
               <img src="img/categories_phone.png" />
             </div>
@@ -54,15 +57,17 @@ function Categories() {
         </div>
 
         <div className="categories_tablet">
-          <div className="categories_tablet_name-description">
-            <div className="categories_tablet_name">Tablet</div>
-            <div className="categories_tablet_description">
-              Empower your work
+          <Link to="/products/4">
+            <div className="categories_tablet_name-description">
+              <div className="categories_tablet_name">Tablet</div>
+              <div className="categories_tablet_description">
+                Empower your work
+              </div>
             </div>
-          </div>
-          <div className="categories_tablet_img">
-            <img src="img/categories_tablet.png" />
-          </div>
+            <div className="categories_tablet_img">
+              <img src="img/categories_tablet.png" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -10,9 +10,7 @@
 }
 
 .catalog_list-product-item .catalog_list-product-item-into  .catalog_list-product-item-into-img {
-    overflow: hidden;
     height: 300px;
-    padding: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,7 +18,7 @@
 
 .catalog_list-product-item .catalog_list-product-item-into  .catalog_list-product-item-into-img img {
     height: 100%;
-    object-fit:cover;
+    object-fit:contain;
     max-width: 100%;
 
 }
@@ -39,9 +37,19 @@
 .catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-price {
     font-family: 'Readex Pro';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400; 
     font-size: 28px;
     color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-ram {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400; 
+    font-size: 20px;
+    color: #a30000;
     text-align: center;
     margin-top: 10px;
 }

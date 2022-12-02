@@ -2,6 +2,7 @@ import { Routes, Route} from 'react-router-dom';
 import MainPage from '../MainPage/MainPage';
 import Catalog from '../Catalog/Catalog';
 
+ 
 
 
 function AppRouter() {
@@ -9,7 +10,7 @@ function AppRouter() {
         
             <Routes>
                 <Route path='/' element={<MainPage/>}/>
-                <Route path='/products' element={<Catalog/>}/>                
+                <Route path='/products/:id' element={<Catalog/>}/>                
             </Routes>
     )
     

@@ -6,6 +6,7 @@
     display: flex;
     transform: scale(0);
     transition: 0.5s;
+    z-index: 1;
 }
 
 .modal .modal_close {
@@ -21,6 +22,7 @@
 
 .modal.active {
     transform: scale(1);
+    z-index: 2;
 }
 
 .modal__content {

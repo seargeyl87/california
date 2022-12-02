@@ -1,43 +1,38 @@
 import "./ShowCase.css";
 import ShowCaseDash from "../ShowCaseDash/ShowCaseDash";
 import { useState, useEffect } from "react";
-import axios from "axios";
+import PostService from "../../API/PostService";
 
 function ShowCase() {
   let [state, setState] = useState([]);
   let [stateDash, setStateDash] = useState([]);
-  let [idPage, setIdPage] = useState(1);
+  let [idPage, setIdPage] = useState(0);
 
   async function getData() {
-    let response = axios
-      .get(`http://localhost:3000/showcase?id=${idPage}`)
-      .then((resp) => {
-        setState(resp.data[0]);
-      });
+    let response = PostService.getDataShowCase().then((resp) => {
+      setState(resp.data);
+    });
   }
 
   async function getDataDash() {
-    let response = axios
-      .get(`http://localhost:3000/showcase-dash`)
-      .then((resp) => {
-        setStateDash(resp.data);
-      });
+    let response = await PostService.getDash().then((resp) => {
+      setStateDash(resp.data);
+    });
   }
 
-
   function prevPage() {
-    if (idPage > 1) {
+    if (idPage > 0) { 
       setIdPage(--idPage);
     } else {
-      setIdPage(3);
+      setIdPage(2);
     }
   }
 
   function nextPage() {
-    if (idPage < 3) {
+    if (idPage < 2) {
       setIdPage(++idPage);
     } else {
-      setIdPage(1);
+      setIdPage(0);
     }
   }
 
@@ -49,32 +44,42 @@ function ShowCase() {
     getDataDash();
   }, []);
 
-  let arr = [{ status: true }, { status: false }, { status: false }];
+  // let arr = [{ status: true }, { status: false }, { status: false }];
 
   return (
     <div className="show-case">
       <div className="show-case_arrow-left">
         <div className="show-case_arrow-left-icon" onClick={prevPage}></div>
       </div>
-      <div className="show-case_info">
-        <div className="show-case_head">{state.heading}</div>
-        <div className="show-case_description">{state.description}</div>
-        <div className="show-case_button">
-          <button>Explore</button>
-        </div>
-        <div className="show-case_dash">
-          <div className="dash">
-            {stateDash.map((item, index) => (
-              <ShowCaseDash item={item} idPage={idPage} key={index} />
-            ))}
-          </div>
-        </div> 
-      </div>
-      <div className="show-case_picture">
-        <img src={state.img} />
-      </div>
+
+      {state.map((item, index) =>
+        index === idPage ? (
+          <>
+            <div className="show-case_info">
+                <div className="show-case_head">{item.heading}</div>
+                <div className="show-case_description">{item.description}</div>
+                <div className="show-case_button">
+                  <button>Explore</button>
+                </div>
+            </div>
+            <div className="show-case_picture">
+                 <img src={item.img} />
+            </div>
+          </>
+        ) : (
+          <></>
+        )
+      )}
+
       <div className="show-case_arrow-right">
         <div className="show-case_arrow-right-icon" onClick={nextPage}></div>
+      </div>
+      <div className="show-case_dash">
+        <div className="dash">
+          {stateDash.map((item, index) => (
+            <ShowCaseDash item={item} idPage={idPage} key={index} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -11,6 +11,7 @@
     transform: scale(0);
     overflow:scroll;
     transition: 0.5s; 
+    z-index: 2;
 }
 
 .modal-search.active {

@@ -1,41 +1,15 @@
 import "./Buttom.css";
-import {useState} from 'react';
-import {useDispatch, useSelector } from "react-redux";
+
+
 
 function Buttom() {
 
-  // let [state, setState] = useState(5);
-
-  // let reducer = (state, action) => {
-  //   switch (action.type) {
-  //     case 'minus':
-  //       setState((state)=> state - 1)
-  //       break;
-  //       case 'plus':
-  //         setState((state) => state + 1)
-  //     default:
-  //       setState(5)
-  //       break;
-  //   }
-  // }
-  // let dispath = useDispatch()
-
-
-
   return (
     <div className="buttom">
-
-      {/* <div className="buttons">
-        <button>убавить</button>
-        <div>{state}</div>
-        <button>прибавить</button>
-      </div> */}
-
-
       <div className="buttom-menu">
         <div className="buttom_logo-description">
           <div className="buttom_logo-description_logo">
-              <img src="icons/buttom-logo.svg"/>
+            <img src="/icons/buttom-logo.svg" />
           </div>
           <div className="buttom_logo-description_description">
             Sign up for texts to be notified about our best offers on the
@@ -59,13 +33,9 @@ function Buttom() {
 
           <div className="buttom_sections_list">
             <div className="buttom_sections_list_head">Support</div>
-            <div className="buttom_sections_list_item-menu">
-              Style Guide
-            </div>
+            <div className="buttom_sections_list_item-menu">Style Guide</div>
             <div className="buttom_sections_list_item-menu">Licensing</div>
-            <div className="buttom_sections_list_item-menu">
-              Change Log
-            </div>
+            <div className="buttom_sections_list_item-menu">Change Log</div>
             <div className="buttom_sections_list_item-menu">Contact</div>
           </div>
 
@@ -78,9 +48,7 @@ function Buttom() {
           </div>
         </div>
       </div>
-      <div className="buttom-line">
-
-      </div>
+      <div className="buttom-line"></div>
     </div>
   );
 }

@@ -1,0 +1,20 @@
+.catalog-filter-memory {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.catalog-filter-memory .catalog-filter-memory-head {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight:bold;
+    display: flex;
+}
+
+.catalog-filter-memory .catalog-filter-memory_list-checkbox {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}

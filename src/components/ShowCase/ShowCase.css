@@ -1,101 +1,94 @@
 .show-case {
-    display: flex;
-    background-color: #DCE5E2;
-    border-radius: 32px;
-    margin-top: 20px;
-    box-sizing: border-box;
-    max-height: 421px;
-
-} 
+  display: flex;
+  background-color: #dce5e2;
+  border-radius: 32px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  height: 421px;
+  position: relative;
+  z-index: 1; 
+}
 
 .show-case .show-case_arrow-left {
-    display: flex; 
-    align-items: center;
-    margin-left: 20px;
+  display: flex;
+  top: 45%;
+  left: 20px;
+  position: absolute;
+  
 }
 
 .show-case .show-case_arrow-left .show-case_arrow-left-icon {
-    width: 14px;
-    height: 26px;
-    background-image: url(../../../public/icons/show-case-arrow-left.svg);
-    cursor: pointer;
-
+  width: 14px;
+  height: 26px;
+  background-image: url(../../../public/icons/show-case-arrow-left.svg);
+  cursor: pointer;
 }
 
 .show-case .show-case_info {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    padding-left: 20px;
-    justify-content: center;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding-left: 20px;
+  justify-content: center;
+  margin: 50px 0 0 40px;
 }
 
 .show-case .show-case_info .show-case_head {
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro";
   font-size: 58px;
   font-weight: 400;
-
-
 }
 
 .show-case .show-case_info .show-case_description {
-    font-size: 16px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    /* position: relative; */
- 
+  font-size: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .show-case .show-case_info .show-case_button button {
-    border: 1px solid #000000;
-    border-radius: 200px;
-    background: #DCE5E2;
-    width: 170px;
-    height: 50px;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  background: #dce5e2;
+  width: 170px;
+  height: 50px;
 }
-
 
 .show-case .show-case_picture {
-    display: flex;
-    margin-left: 100px;
-    flex-basis: 50%;
+  margin-left: 100px;
+  height: 100%;
+  display: block;
 }
+
 
 
 .show-case .show-case_picture img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  max-height: 100%;
+
 }
 
 .show-case .show-case_arrow-right {
-    display: flex; 
-    align-items: center;
-    margin-left: 70px;
-    margin-right: 20px;
-
+  position: absolute;
+  right: 20px;
+  top: 45%;
 }
 
 .show-case .show-case_arrow-right .show-case_arrow-right-icon {
-    width: 14px;
-    height: 26px;
-    background-image: url(../../../public/icons/show-case-arrow-right.svg);
-    cursor: pointer;
-
+  width: 14px;
+  height: 26px;
+  background-image: url(../../../public/icons/show-case-arrow-right.svg);
+  cursor: pointer;
 }
 
-.show-case .show-case_dash  {
-    padding: 20px 0 30px 0;
-    margin-top: 50px;
-    margin-left: 40%;
+.show-case .show-case_dash {
+  position: absolute;
+  bottom: 30px;
+  left: 24%;
 }
-
 
 .show-case .show-case_dash .dash {
-    display: flex;
-    position:absolute;
-
+  display: flex;
 }

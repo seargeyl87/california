@@ -1,12 +1,12 @@
-import './ShowCaseDash.css';
+import "./ShowCaseDash.css";
 
+function ShowCaseDash({ item, idPage }) {
 
-function ShowCaseDash({item, idPage}) {
-    console.log(idPage);
-    console.log(item)
-    return (   
-       <div className={item === idPage ? "dash_point-active" : "dash_point-inactive"}></div>
-    )
+  return (
+    <div
+      className={item === idPage + 1 ? "dash_point-active" : "dash_point-inactive"}
+    ></div>
+  );
 }
 
 export default ShowCaseDash;

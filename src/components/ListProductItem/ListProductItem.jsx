@@ -15,12 +15,12 @@ function ListProductItem({ itemProduct }) {
   }
 
   function storage() {
-    localStorage.setItem(itemProduct.id, itemProduct.name); // необходимо сделать так, чтобы при вызове данной функции был перерендер компонентов. В другом компоненте (например каталог) вызвать какую-нибудь функцию с изменением состояния в зависимости от изменения lokalStorage
+    localStorage.setItem(itemProduct.id, countProduct); // необходимо сделать так, чтобы при вызове данной функции был перерендер компонентов. В другом компоненте (например каталог) вызвать какую-нибудь функцию с изменением состояния в зависимости от изменения lokalStorage
   }
 
   function cleanLocalStorage() {
     localStorage.removeItem(itemProduct.id);
-    (setCountProduct(0))
+    setCountProduct(0);
   }
 
   return (

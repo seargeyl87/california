@@ -7,7 +7,7 @@ function BasketCount({reduceProduct, countProduct, addProduct}) {
         <input placeholder={countProduct}/>
         <button onClick={addProduct}>+</button>
     </div>
-
+ 
     )
 
 }

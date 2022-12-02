@@ -28,6 +28,8 @@
     color: #000000;
     width: 40%;
     align-items: center;
+    text-decoration: none;
+
 }
 
 .categories .categories_section {
@@ -61,6 +63,7 @@
     display: flex;
     justify-content: end;
     padding-right: 5%;
+
 }
 
 
@@ -78,6 +81,7 @@
     font-size: 15px;
     line-height: 19px;    
     color: #000000;
+    
 }
 
 .categories .categories_section .categories_laptop-watch .categories_laptop .categories_laptop_name-description .categories_laptop_name-description-into .categories_laptop_description {
@@ -88,8 +92,10 @@
     line-height: 38px;
     color: #000000;
     text-align: end;
-    
+    text-decoration: none;  
+
 }
+
 
 .categories .categories_section .categories_laptop-watch .categories_watch {
     display: flex;

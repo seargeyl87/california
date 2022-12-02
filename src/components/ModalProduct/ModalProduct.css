@@ -6,6 +6,7 @@
     padding-right: 20px;
     box-sizing: border-box;
     border-bottom: 1px solid rgb(128, 128, 128);
+    z-index: 2;
 }
 
 .modal-product .modal-search_product_img {
