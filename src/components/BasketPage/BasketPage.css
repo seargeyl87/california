@@ -1,0 +1,16 @@
+.basket-page {
+    padding: 0 20% 0 20% ;
+}
+
+.basket-page .basket-page_head {
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+
+.basket-page .basket-page_order button {
+    background-color: brown;
+    color: white;
+    height: 30px;
+
+}

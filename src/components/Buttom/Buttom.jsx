@@ -1,9 +1,6 @@
 import "./Buttom.css";
 
-
-
 function Buttom() {
-
   return (
     <div className="buttom">
       <div className="buttom-menu">

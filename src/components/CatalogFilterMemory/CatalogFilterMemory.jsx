@@ -1,23 +1,19 @@
 import "./CatalogFilterMemory.css";
 import { useState, useEffect } from "react";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import PostService from "../../API/PostService";
 import CheckBoxItem from "../CheckBoxItem/CheckBoxItem";
 
-
 function CatalogFilterMemory({ changeChooseOzu }) {
   let [stateFilterMemory, setStateFilterMemory] = useState([]);
-  let [state, setState] = useState([])
-
-  let {id} = useParams();
-  console.log(id)
+  let { id } = useParams();
 
   function getFilterMemory() {
     let response = PostService.getFiltersMemory().then((resp) => {
-
-      setStateFilterMemory((() => resp.data.filter(item => item.categoryID==id)[0].options))
-    })
-
+      setStateFilterMemory(
+        () => resp.data.filter((item) => item.categoryID == id)[0].options
+      );
+    });
   }
 
   useEffect(() => {

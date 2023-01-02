@@ -1,12 +1,8 @@
-
-
 .checkbox-item {
-  display: flex; 
+  display: flex;
 }
 
-.checkbox-item  .checkbox-item_checkbox_name {
+.checkbox-item .checkbox-item_checkbox_name {
   display: flex;
   width: 70px;
-  
 }
-

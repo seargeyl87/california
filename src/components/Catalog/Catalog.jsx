@@ -89,9 +89,6 @@ function Catalog() {
     filters();
   }, [chooseFilterOzy, chooseFilterMemory, minPrice, maxPrice]);
 
-
-  
-
   return (
     <div className="catalog">
       <div className="catalog_list-filters">

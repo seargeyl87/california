@@ -8,7 +8,6 @@ function CatalogFilterRam({ changeChooseOzu }) {
   let [stateFilterOzy, setStateFilterOzy] = useState([]);
 
   let { id } = useParams();
-  console.log(id);
 
   function getFilterOzy() {
     let response = PostService.getFiltersRam().then((resp) => {

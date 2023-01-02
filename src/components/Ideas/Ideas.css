@@ -1,80 +1,80 @@
 .ideas {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .ideas .ideas_head-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ideas .ideas_head-description .ideas_head {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    color: #000000;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  color: #000000;
 }
 
 .ideas .ideas_head-description .ideas_description {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
-    text-align: center;
-    color: #000000;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
 }
 
-.ideas  .ideas_image-info {
-   display: flex;
+.ideas .ideas_image-info {
+  display: flex;
 }
 
-.ideas  .ideas_image-info {
-    padding-top: 40px;
+.ideas .ideas_image-info {
+  padding-top: 40px;
 }
 
-.ideas  .ideas_image-info .ideas_image {
-    display: flex;
-    flex-basis: 50%;
-    padding-right: 17px;
+.ideas .ideas_image-info .ideas_image {
+  display: flex;
+  flex-basis: 50%;
+  padding-right: 17px;
 }
 
-.ideas  .ideas_image-info .ideas_image img {
-    width: 100%;
+.ideas .ideas_image-info .ideas_image img {
+  width: 100%;
 }
 
-.ideas  .ideas_image-info .ideas_info {
-    display: flex;
-    flex-basis: 50%;
-    flex-direction: column;
-    padding: 0 17px 0 17px;
+.ideas .ideas_image-info .ideas_info {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  padding: 0 17px 0 17px;
 }
 
-.ideas  .ideas_image-info .ideas_info div {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    color: #000000;
-    margin-top: 10px;
+.ideas .ideas_image-info .ideas_info div {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  margin-top: 10px;
 }
 
 .ideas .ideas_see-all {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
 }
 
 .ideas .ideas_see-all .ideas_see-all_txt {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: capitalize;
-    color: #000000;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #000000;
 }

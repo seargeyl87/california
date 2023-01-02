@@ -1,0 +1,78 @@
+.basket-page-item {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  padding-bottom: 10px;
+}
+
+.basket-page-item .basket-page-item_img {
+    width: 150px;
+
+}
+
+.basket-page-item .basket-page-item_img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.basket-page-item .basket-page-item_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.basket-page-item .basket-page-item_info .basket-page-item_info_head {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.basket-page-item .basket-page-item_info .basket-page-item_info_txt {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 17px;
+  color: #4b4b4b;
+  margin-top: 10px;
+}
+
+.basket-page-item .basket-page-item_info .basket-page-item_info_ram,
+.basket-page-item_info_memory {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4b4b4b;
+  margin-top: 10px;
+}
+
+.basket-page-item .basket-page-item_info .basket-page-item_info_price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 17px;
+  color: #570000;
+  margin-top: 10px;
+}
+
+.basket-page-item .basket-page-item-count {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.basket-page-item .basket-page-item-count .basket-page-item-count_full-price {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(141, 141, 141);
+}

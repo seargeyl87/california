@@ -2,23 +2,25 @@ import "./ModalSearch.css";
 import ModalProduct from "../ModalProduct/ModalProduct";
 import { useState, useEffect } from "react";
 import PostService from "../../API/PostService";
-import {useParams} from "react-router-dom";
-
+import { useMatch } from "react-router-dom";
 
 function ModalSearch({ activeSearch, closeModalSearch }) {
   let [text, setValueText] = useState("");
   let [listProduct, setListProduct] = useState([]);
 
-  let {id} = useParams();    // для поиска по категориям нужно вытащить это айди, сейчас выходит undefined
+  const productMatch = useMatch("/products/:id");
 
-  async function getProducts(id) {
-    let response = await PostService.ProductSearch(id, text).then((resp) => {
+  async function getProducts() {
+    let response = await PostService.ProductSearch(
+      productMatch ? productMatch.params.id : 1,
+      text
+    ).then((resp) => {
       setListProduct(resp.data);
     });
   }
- 
+
   useEffect(() => {
-    getProducts(); 
+    getProducts();
   }, [text]);
 
   function inputValue(e) {

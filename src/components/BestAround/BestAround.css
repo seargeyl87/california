@@ -1,111 +1,147 @@
 .best-around {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 40px 0;
 }
 
 .best-around .best-around_head {
-    display: flex;
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    text-align: center;
-    color: #000000;
+  display: flex;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
 }
 
 .best-around .best-around_description {
-    display: flex;
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
-    color: #000000;
+  display: flex;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
 }
-
 
 .best-around .best-around_list-products {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
 }
 
-.best-around .best-around_list-products  .best-around_list-products_product {
-    display: flex;
-    flex-basis: 33.33%;
-    padding-right: 20px;
+.best-around .best-around_list-products .best-around_list-products_product {
+  display: flex;
+  flex-basis: 33.33%;
+  padding-right: 20px;
 }
 
-
-.best-around .best-around_list-products  .best-around_list-products_product .best-around_list-products_product-into {
-    display: flex;
-    flex-direction: column;
-    background: #F8F9FA;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.best-around
+  .best-around_list-products
+  .best-around_list-products_product
+  .best-around_list-products_product-into {
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.best-around .best-around_list-products  .best-around_list-products_product .best-around_list-products_product-into .best-around_list-products_product-info {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+.best-around
+  .best-around_list-products
+  .best-around_list-products_product
+  .best-around_list-products_product-into
+  .best-around_list-products_product-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.best-around .best-around_list-products  .best-around_list-products_product .best-around_list-products_product-into .best-around_list-products_product-info .best-around_list-products_product_button {
-    margin-top: 25px;
+.best-around
+  .best-around_list-products
+  .best-around_list-products_product
+  .best-around_list-products_product-into
+  .best-around_list-products_product-info
+  .best-around_list-products_product_button {
+  margin-top: 25px;
 }
 
-.best-around .best-around_list-products  .best-around_list-products_product .best-around_list-products_product-into .best-around_list-products_product-info .best-around_list-products_product_button  button {
-    width: 190px;
-    height: 50px;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-    border-radius: 200px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    background: #F8F9FA;
+.best-around
+  .best-around_list-products
+  .best-around_list-products_product
+  .best-around_list-products_product-into
+  .best-around_list-products_product-info
+  .best-around_list-products_product_button
+  button {
+  width: 190px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  background: #f8f9fa;
 }
 
-.best-around .best-around_list-products  .best-around_list-products_product .best-around_list-products_product-into .best-around_list-products_product-info .best-around_list-products_product_head {
-    display: flex;
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
-    color: #000000;
+.best-around
+  .best-around_list-products
+  .best-around_list-products_product
+  .best-around_list-products_product-into
+  .best-around_list-products_product-info
+  .best-around_list-products_product_head {
+  display: flex;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
 }
 
-.best-around .best-around_list-products  .best-around_list-products_product .best-around_list-products_product-into .best-around_list-products_product-info .best-around_list-products_product_description {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 35px;
-    color: #000000;
+.best-around
+  .best-around_list-products
+  .best-around_list-products_product
+  .best-around_list-products_product-into
+  .best-around_list-products_product-info
+  .best-around_list-products_product_description {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  color: #000000;
 }
 
-.best-around .best-around_list-products  .best-around_list-products .best-around_list-products_product {
-    display: flex;
-
+.best-around
+  .best-around_list-products
+  .best-around_list-products
+  .best-around_list-products_product {
+  display: flex;
 }
 
-.best-around .best-around_list-products  .best-around_list-products_product .best-around_list-products_product-into .best-around_list-products_product_img {
-    display: flex;
-    width: 100%;
-  }
+.best-around
+  .best-around_list-products
+  .best-around_list-products_product
+  .best-around_list-products_product-into
+  .best-around_list-products_product_img {
+  display: flex;
+  width: 100%;
+}
 
-
- .best-around .best-around_list-products  .best-around_list-products_product .best-around_list-products_product-into .best-around_list-products_product_img img {
-    display: flex;
-    width: 100%;
-  }
+.best-around
+  .best-around_list-products
+  .best-around_list-products_product
+  .best-around_list-products_product-into
+  .best-around_list-products_product_img
+  img {
+  display: flex;
+  width: 100%;
+}

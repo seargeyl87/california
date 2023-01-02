@@ -21,7 +21,7 @@ function ShowCase() {
   }
 
   function prevPage() {
-    if (idPage > 0) { 
+    if (idPage > 0) {
       setIdPage(--idPage);
     } else {
       setIdPage(2);
@@ -44,8 +44,6 @@ function ShowCase() {
     getDataDash();
   }, []);
 
-  // let arr = [{ status: true }, { status: false }, { status: false }];
-
   return (
     <div className="show-case">
       <div className="show-case_arrow-left">
@@ -56,14 +54,14 @@ function ShowCase() {
         index === idPage ? (
           <>
             <div className="show-case_info">
-                <div className="show-case_head">{item.heading}</div>
-                <div className="show-case_description">{item.description}</div>
-                <div className="show-case_button">
-                  <button>Explore</button>
-                </div>
+              <div className="show-case_head">{item.heading}</div>
+              <div className="show-case_description">{item.description}</div>
+              <div className="show-case_button">
+                <button>Explore</button>
+              </div>
             </div>
             <div className="show-case_picture">
-                 <img src={item.img} />
+              <img src={item.img} />
             </div>
           </>
         ) : (

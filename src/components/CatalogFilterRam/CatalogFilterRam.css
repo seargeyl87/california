@@ -1,19 +1,19 @@
 .catalog-filter-ram {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .catalog-filter-ram .catalog-filter-ram-head {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    font-weight:bold
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .catalog-filter-ram .catalog-filter-ram_list-checkbox {
-    display: flex;
-    margin-top: 10px;
-    flex-direction: column;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
 }

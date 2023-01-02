@@ -1,74 +1,92 @@
 .catalog_list-product-item {
-    display: flex;
-    flex-basis: 32%;
-    padding: 10px;
-    box-sizing: border-box;
+  display: flex;
+  flex-basis: 32%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .catalog_list-product-item .catalog_list-product-item-into {
-    width: 100%;
+  width: 100%;
 }
 
-.catalog_list-product-item .catalog_list-product-item-into  .catalog_list-product-item-into-img {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.catalog_list-product-item
+  .catalog_list-product-item-into
+  .catalog_list-product-item-into-img {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.catalog_list-product-item .catalog_list-product-item-into  .catalog_list-product-item-into-img img {
-    height: 100%;
-    object-fit:contain;
-    max-width: 100%;
-
+.catalog_list-product-item
+  .catalog_list-product-item-into
+  .catalog_list-product-item-into-img
+  img {
+  height: 100%;
+  object-fit: contain;
+  max-width: 100%;
 }
 
-.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-headind {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-    text-align: center;
-    margin-top: 10px;
-    height: 36px;
+.catalog_list-product-item
+  .catalog_list-product-item-into
+  .catalog_list-product-item-into-headind {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  margin-top: 10px;
+  height: 36px;
 }
 
-.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-price {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400; 
-    font-size: 28px;
-    color: #000000;
-    text-align: center;
-    margin-top: 10px;
+.catalog_list-product-item
+  .catalog_list-product-item-into
+  .catalog_list-product-item-into-price {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #000000;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-ram {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400; 
-    font-size: 20px;
-    color: #a30000;
-    text-align: center;
-    margin-top: 10px;
+.catalog_list-product-item
+  .catalog_list-product-item-into
+  .catalog_list-product-item-into-ram {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #a30000;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-basket {
-    display: flex;
-    justify-content: center;
-    margin-left: 50px;
-
+.catalog_list-product-item
+  .catalog_list-product-item-into
+  .catalog_list-product-item-into-basket {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
 }
 
-.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-basket .catalog_list-product-item-into-basket_button-basket {
-    margin-left: 30px;
+.catalog_list-product-item
+  .catalog_list-product-item-into
+  .catalog_list-product-item-into-basket
+  .catalog_list-product-item-into-basket_button-basket {
+  margin-left: 30px;
 }
 
-.catalog_list-product-item .catalog_list-product-item-into .catalog_list-product-item-into-basket .catalog_list-product-item-into-basket_button-basket button {
-    background-color: rgb(163, 65, 0);
-    color: antiquewhite;
-    border: solid 1px antiquewhite;
-    height: 25px;
-    width: 100px;
+.catalog_list-product-item
+  .catalog_list-product-item-into
+  .catalog_list-product-item-into-basket
+  .catalog_list-product-item-into-basket_button-basket
+  button {
+  background-color: rgb(163, 65, 0);
+  color: antiquewhite;
+  border: solid 1px antiquewhite;
+  height: 25px;
+  width: 100px;
 }

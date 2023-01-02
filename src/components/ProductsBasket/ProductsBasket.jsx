@@ -1,32 +1,44 @@
 import "./ProductsBasket.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BasketCount from "../BasketCount/BasketCount";
+import PostService from "../../API/PostService";
 
-function ProductsBasket() {
-  let [countProduct, setCountProduct] = useState(0);
+function ProductsBasket({ putBasket }) {
+  let [state, setState] = useState([]);
 
-  function reduceProduct() {
-    if (countProduct > 1) {
-      setCountProduct(--countProduct);
-    }
-  }
-  function addProduct() { 
-    setCountProduct(++countProduct);
+  let [countProduct, setCountProduct] = useState(putBasket.options);
+
+  function cleanLocalStorage() {
+    localStorage.removeItem(putBasket.categoryProduct);
   }
 
-  return ( 
+  async function ProductInBasket() {
+    let response = PostService.GetProductBasket(
+      putBasket.categoryID,
+      putBasket.categoryProduct
+    ).then((resp) => setState(resp.data[0]));
+  }
+
+  useEffect(() => {
+    ProductInBasket();
+  }, []);
+
+  return (
     <div className="products-basket">
-      <div className="products-basket_delete">x</div>
+      <div className="products-basket_delete" onClick={cleanLocalStorage}>
+        x
+      </div>
+
+      {}
       <div className="products-basket_img">
-        <img src="img/categories_phone.png" />
+        <img src={state.img} />
       </div>
       <div className="products-basket_name-count">
-        <div className="products-basket_name">Apple iPhone 14 128GB</div>
-        <BasketCount
-          reduceProduct={reduceProduct}
-          countProduct={countProduct}
-          addProduct={addProduct}
-        />
+        <div className="products-basket_name">{state.name}</div>
+        <div className="products-basket_count">{countProduct} шт</div>
+        <div className="products-basket-price">
+          {state.price * countProduct} руб
+        </div>
       </div>
     </div>
   );

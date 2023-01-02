@@ -1,29 +1,27 @@
 import "./Menu.css";
 import { useState, useEffect } from "react";
-import axios from "axios";
-import Modal from "../Modal/Modal";
+import ModalBasket from "../ModalBasket/ModalBasket";
 import ModalSearch from "../ModalSearch/ModalSearch";
-
+import { useMatch } from "react-router-dom";
+import PostService from "../../API/PostService";
 
 function Menu() {
-
+  const productMatch = useMatch("/products/:id");
 
   let [basketCount, setBasketCount] = useState([]);
   let [modalActive, setModalActive] = useState(false);
   let [activeSearch, setActiveSearch] = useState(false);
 
   async function getBasketCount() {
-    let response = await axios
-      .get("http://localhost:3000/showcase-basket")
-      .then((resp) => {
-        setBasketCount(resp.data[0]);
-      });
+    let response = PostService.BasketData().then((resp) => {
+      setBasketCount(resp.data[0]);
+    });
   }
 
   function closeModal() {
     setModalActive(false);
   }
-  function openModal() { 
+  function openModal() {
     setModalActive(true);
   }
 
@@ -59,7 +57,7 @@ function Menu() {
         <div className="menu_icons-right_basket" onClick={openModal}>
           <div className="menu_icons-right_basket_circle">{basketCount}</div>
         </div>
-        <Modal active={modalActive} closeModal={closeModal} />
+        <ModalBasket active={modalActive} closeModal={closeModal} />
         <ModalSearch
           activeSearch={activeSearch}
           closeModalSearch={closeModalSearch}

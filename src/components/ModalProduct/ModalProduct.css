@@ -1,73 +1,76 @@
 .modal-product {
-    display: flex;
-    margin-top: 30px;
-    width: 95%;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgb(128, 128, 128);
-    z-index: 2;
+  display: flex;
+  margin-top: 30px;
+  width: 95%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  z-index: 2;
 }
 
 .modal-product .modal-search_product_img {
-    width: 68px;
-    height: 110px;
-    display: flex;
-    align-items: center;
+  width: 68px;
+  height: 110px;
+  display: flex;
+  align-items: center;
 }
 
 .modal-product .modal-search_product_img img {
-    width: 100%;
-    max-height: 90px;
+  width: 100%;
+  max-height: 90px;
 }
 
 .modal-product .modal-search_product_head-description {
-    display: flex;
-    margin: 0 40px 0 40px;
-    flex-direction: column;
-    width: 90%;
-
+  display: flex;
+  margin: 0 40px 0 40px;
+  flex-direction: column;
+  width: 90%;
 }
 
-.modal-product .modal-search_product_head-description  .modal-search_product_head-description_head {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-size: 21px;
-    line-height: 52px;
-    color: #000000;
-    font-weight:bold
-
+.modal-product
+  .modal-search_product_head-description
+  .modal-search_product_head-description_head {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-size: 21px;
+  line-height: 52px;
+  color: #000000;
+  font-weight: bold;
 }
 
-.modal-product .modal-search_product_head-description .modal-search_product_head-description_description {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-size: 18px;
-    color: #000000;
+.modal-product
+  .modal-search_product_head-description
+  .modal-search_product_head-description_description {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-size: 18px;
+  color: #000000;
 }
-
-
 
 .modal-product .modal-search_product_price-button {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-product .modal-search_product_price-button .modal-search_product_price {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-size: 18px;
-    color: #000000;
-    font-weight:bold
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
 }
 
-.modal-product .modal-search_product_price-button .modal-search_product_button button{
-    width: 100px;
-    height: 30px;
-    margin-top: 10px;
-    background-color: #e70;
-    color: white;
-    padding: 0 10px 0 10px;
-    border-radius: 3px;
-    border: 0px;
+.modal-product
+  .modal-search_product_price-button
+  .modal-search_product_button
+  button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #e70;
+  color: white;
+  padding: 0 10px 0 10px;
+  border-radius: 3px;
+  border: 0px;
 }

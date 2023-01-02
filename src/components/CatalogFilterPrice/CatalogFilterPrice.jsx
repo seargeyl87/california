@@ -1,8 +1,6 @@
 import "./CatalogFilterPrice.css";
 
-
 function CatalogFilterPrice({ changeMinPrice, changeMaxPrice }) {
-
   function getFilterMinPrice(e) {
     if (e.target.value) {
       changeMinPrice(Number(e.target.value));

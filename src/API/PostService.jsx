@@ -1,5 +1,5 @@
 import axios from "axios";
- 
+
 export default class PostService {
   static async getDataShowCase() {
     const response = await axios.get("http://localhost:3000/showcase");
@@ -21,6 +21,11 @@ export default class PostService {
     return response;
   }
 
+  static async BasketData() {
+    const response = await axios.get(`http://localhost:3000/showcase-basket`);
+    return response;
+  }
+
   static async getProducts(
     limit = 6,
     page,
@@ -39,14 +44,21 @@ export default class PostService {
         price_gte: price_min,
         price_lte: price_max,
       },
-    }); 
+    });
     return response;
   }
 
   static async ProductSearch(categoryID = 1, value) {
-    const response = await axios.get(`http://localhost:3000/${categoryID}?name_like=${value}`)
+    const response = await axios.get(
+      `http://localhost:3000/${categoryID}?name_like=${value}`
+    );
     return response;
   }
 
-  
+  static async GetProductBasket(categoryID = 1, id) {
+    const response = await axios.get(
+      `http://localhost:3000/${categoryID}?id=${id}`
+    );
+    return response;
+  }
 }

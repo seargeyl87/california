@@ -1,6 +1,7 @@
 import "./ListProductItem.css";
 import BasketCount from "../BasketCount/BasketCount";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 function ListProductItem({ itemProduct }) {
   let [countProduct, setCountProduct] = useState(0);
@@ -14,13 +15,14 @@ function ListProductItem({ itemProduct }) {
     setCountProduct(++countProduct);
   }
 
-  function storage() {
-    localStorage.setItem(itemProduct.id, countProduct); // необходимо сделать так, чтобы при вызове данной функции был перерендер компонентов. В другом компоненте (например каталог) вызвать какую-нибудь функцию с изменением состояния в зависимости от изменения lokalStorage
-  }
+  const { id } = useParams();
 
+  function storage() {
+    localStorage.setItem(itemProduct.id, JSON.stringify([countProduct, id])); 
+  }
+  
   function cleanLocalStorage() {
     localStorage.removeItem(itemProduct.id);
-    setCountProduct(0);
   }
 
   return (

@@ -1,16 +1,15 @@
 .catalog-filter-price {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-price .catalog-filter-price-head {
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    font-weight:bold;
-    display: flex;
-    
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
 }
 
 .catalog-filter-price .catalog-filter-price-value {
